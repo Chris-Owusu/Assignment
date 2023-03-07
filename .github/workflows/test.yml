@@ -1,5 +1,7 @@
 name: Demo QA Test
-'on': push
+'on':
+  schedule:
+    - cron: '0 11 * * 5'
 jobs:
   cupress-run:
     runs-on: ubuntu-latest
@@ -12,4 +14,3 @@ jobs:
         uses: cypress-io/github-action@v5.1.0
         with:
           start: npm start
-
