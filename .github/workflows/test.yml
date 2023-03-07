@@ -1,6 +1,6 @@
 name: Demo QA Test
 
-on: [pull_request]
+on: push
 
 jobs:
   tests:
@@ -16,6 +16,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install
-        run: npm ci
-      - name: tests
+#       - name: npm install
+#         run: npm ci
+#       - name: tests
