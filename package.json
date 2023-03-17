@@ -4,7 +4,7 @@
     "cypress-downloadfile": "^1.2.3"
   },
   "scripts": {
-    "start": "cypress run --headed --browser chrome"
+    "start": "cypress run --headless --browser chrome"
   },
   "devDependencies": {
     "cy-verify-downloads": "^0.1.11",
