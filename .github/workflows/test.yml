@@ -1,15 +1,11 @@
 name: Demo QA Test
-'on':
-  push
-  
+on: push
 jobs:
   cupress-run:
     runs-on: ubuntu-latest
+    name: E2E on Chrome
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3.3.0
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.6.0
-      - name: Cypress.io
+      - uses: actions/checkout@v3.3.0
+      - uses: cypress-io/github-action@v5
         with:
-          start: npm start
+          browser: chrome
