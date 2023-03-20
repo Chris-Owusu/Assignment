@@ -21,8 +21,8 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-// import 'cypress-iframe';
-// import 'cypress-fil\oad';
-// import 'cypress-xpath';
+import 'cypress-iframe';
+import 'cypress-file-upload';
+import 'cypress/xpath';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
