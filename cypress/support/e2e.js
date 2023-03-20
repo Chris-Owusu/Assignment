@@ -23,5 +23,6 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 import './commands'
 import 'cypress-iframe';
 import 'cypress-file-upload';
+import 'cypress-xpath';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
